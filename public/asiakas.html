@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<title>Asiakastiedot</title>
+<meta charset="UTF-8">
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="functions.js"></script>
+<link rel="stylesheet" type="text/css" href="muotoilut.css">
+</head>
+<body>
+	<table><tr><td>
+ <form action="customerinfo">
+  Nimi:<br>
+  <input type="text" name="name" id="namebox"><br>
+  Osoite:<br>
+  <input type="text" name="address"><br>
+  Puhelinnumero:
+  <br>
+  <input type="text" name="phone"><br>
+  Sähköposti:<br>
+  <input type="text" name="email"><br>
+  Henkilötunnus:<br> <input type="text" name="id"><br>
+  
+</form> </td>
+
+<td>
+    <select id ="MyList" onchange="List()"><option>Asiakaslista, klikkaamalla asiakasta saat tarkemmat tiedot</option></select>
+    
+</td></tr>
+</table>
+ <button type="button" onclick="tokaFunktio()">Hae asiakkaat listaan</button> 
+ <button type="button" onclick="testi()">Lisää asiakas</button> 
+</body>
