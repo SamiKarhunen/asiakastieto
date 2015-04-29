@@ -1,6 +1,8 @@
-function tokaFunktio(){
+var asiakas
+function getCustomers(){
 	$.get('/toka', function(data){
-		var tieto = data
+		tieto = data
+		asiakas = data
 		var dropdown = document.getElementById("MyList");
 		var x;
 		var out = "";
@@ -11,13 +13,16 @@ function tokaFunktio(){
 }
 
 
-function List() {
+function detailedInfo() {
 	var selectBox = document.getElementById("MyList");
     var selectedValue = selectBox.options[selectBox.selectedIndex].value;
     document.getElementById("namebox").value = selectedValue;
- 
-
-
+    document.getElementById("addressbox").value = asiakas[selectBox.selectedIndex -1].address;
+    document.getElementById("phonebox").value = asiakas[selectBox.selectedIndex -1].phone;
+    document.getElementById("emailbox").value = asiakas[selectBox.selectedIndex -1].email;
+    document.getElementById("idbox").value = asiakas[selectBox.selectedIndex -1].idnumber;
    }
 
-
+function Clear(){
+	document.getElementById("customerform").reset();
+}

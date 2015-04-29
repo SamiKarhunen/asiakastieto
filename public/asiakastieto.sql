@@ -3,15 +3,15 @@ CREATE DATABASE asiakastieto;
 USE asiakastieto;
 
 CREATE TABLE asiakas (
-	name VARCHAR(30),	
-	address VARCHAR(40),
-	phone VARCHAR(30),
+	name VARCHAR(50),	
+	address VARCHAR(50),
+	phone VARCHAR(50),
 	email VARCHAR(50),
-	id VARCHAR(20)
+	idnumber VARCHAR(50)
 )ENGINE=INNODB; 
 
 
-INSERT INTO asiakas (name, address, phone, email, id) VALUES
+INSERT INTO asiakas (name, address, phone, email, idnumber) VALUES
 ('Seppo Taalasmaa', 'Tasavallankatu 100, 80100 Joensuu', '050-1351156136', 'seppo@taalasmaa.fi', '130355-1256'),
 ('Ulla Taalasmaa', 'Kauppakatu 100, 80100 Joensuu', '050-163482417', 'ulla@taalasmaa.fi', '310155-1443'),
 ('Raineri Kosonen', 'Kauppakatu 43, 80100 Joensuu', '040-5282582427', 'raineri@kosonen.fi', '120466-7472'),

@@ -3,31 +3,33 @@
 <head>
 <title>Asiakastiedot</title>
 <meta charset="UTF-8">
-<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+ <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="functions.js"></script>
 <link rel="stylesheet" type="text/css" href="muotoilut.css">
 </head>
 <body>
 	<table><tr><td>
- <form action="customerinfo">
+ <form action="/addcustomer" method="POST" class="form-horizontal" id="customerform">
   Nimi:<br>
   <input type="text" name="name" id="namebox"><br>
   Osoite:<br>
-  <input type="text" name="address"><br>
+  <input type="text" name="address" id="addressbox"><br>
   Puhelinnumero:
   <br>
-  <input type="text" name="phone"><br>
+  <input type="text" name="phone" id="phonebox"><br>
   Sähköposti:<br>
-  <input type="text" name="email"><br>
-  Henkilötunnus:<br> <input type="text" name="id"><br>
+  <input type="text" name="email" id="emailbox"><br>
+  Henkilötunnus:<br> <input type="text" name="idnumber" id="idbox"><P>
+   <input type="button" name="button" value="Lisää asiakkaan tiedot tietokantaan" type="button">
+
   
 </form> </td>
 
 <td>
-    <select id ="MyList" onchange="List()"><option>Asiakaslista, klikkaamalla asiakasta saat tarkemmat tiedot</option></select>
+    <select size="15" id ="MyList" onchange="detailedInfo()"><option>Asiakaslista, klikkaamalla asiakasta saat tarkemmat tiedot</option></select>
     
 </td></tr>
 </table>
- <button type="button" onclick="tokaFunktio()">Hae asiakkaat listaan</button> 
- <button type="button" onclick="testi()">Lisää asiakas</button> 
+ <button type="button" onclick="getCustomers()">Hae asiakkaat listaan</button> 
+ <button type="button" onclick="Clear()">Tyhjennä kentät</button>
 </body>
