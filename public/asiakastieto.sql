@@ -18,7 +18,3 @@ INSERT INTO asiakas (name, address, phone, email, idnumber) VALUES
 ('Kyösti Piiroinen', 'Tasavallankatu 80, 80100 Joensuu', '040-147171143', 'kyosti@piiroinen.fi', '140544-3717'),
 ('Leena Lahtinen', 'Kauppakatu 12, 80100 Joensuu', '040-42824824821', 'leena@lahtinen.fi', '150254-2462'),
 ('Reijo Ruotsalainen', 'Raatekankaantie 100, 80100 Joensuu', '040-1346136113', 'reijo@ruotsalainen.fi', '171267-1361'),
-('Helga Holopainen', 'Kuusiahontie 6, 80100 Joensuu', '050-362472472', 'helga@holopainen.fi', '130477-1353'),
-('Arto Maarainen', 'Rapalankatu 23, 80100 Joensuu', '050-36137177', 'arto@maarainen.fi', '140466-1255'),
-('Anneli Kähkönen', 'Romppalantie 135, 80100 Joensuu', '044-326246247', 'anneli@kahkonen.fi', '150634-2355'),
-('Michael Knight', 'Ritariässäntie 1, 80100 Joensuu', '044-4374272246', 'michael@knight.fi', '010150-2462');
